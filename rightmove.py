@@ -115,14 +115,22 @@ class RightMoveScraper:
         allProperties = self.__get_all_pages()
         newProperties = dict()
 
+        ret = True
+        if len(self.queries) == 0:
+            ret = False
+
         for p in allProperties:
             if not self.queries.get(p):
                 tmpProperty = allProperties.get(p)
                 self.queries[tmpProperty.link] = {'address': tmpProperty.address, 'price': tmpProperty.price}
                 # self.save_queries()
                 newProperties[p] = allProperties.get(p)
+                self.save_queries()
 
-        return newProperties
+        if ret:
+            return newProperties
+        else:
+            return []
 
 
 class RightMoveRobot:

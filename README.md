@@ -2,7 +2,7 @@
 
 [rightmove.co.uk](https://www.rightmove.co.uk/) is one of the UK's largest property listings websites, hosting thousands of listings of properties for sale and rent.
 
-This _python script_ scrapes property listings from [rightmove.co.uk](https://www.rightmove.co.uk/) website. It also sends a **notification** through *Telegram* at new ads added that respect the search criteria.
+This _python script_ scrapes property listings from [rightmove.co.uk](https://www.rightmove.co.uk/) website. It also sends a **notification** through *Telegram* if new ads added that respects the search criteria.
 
 [Telegram Bot](https://core.telegram.org/bots) is used.
 

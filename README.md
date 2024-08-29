@@ -17,11 +17,15 @@ In case you would add the bot to a group (public or private), [here are the inst
 
 ### Requirements to use the scraper
 
-I strongly suggest using a virtual environment, eg. [miniconda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html#)
+I strongly suggest using a virtual environment, eg. [miniconda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html#) wiht the following packages:
 
 * `python 3.x`
-* `requestes` -  `python -m pip requests`
-* `Beautiful Soap` - `python -m pip bs4`
+* `requestes`
+* `Beautiful Soap`
+```bash
+conda create --name rightmove python=3.8 requests bs4
+conda activate rightmove
+```
 
 Why `python -m pip ...`? Here is a meaningful explanation [Why you should use `python -m pip`](https://snarky.ca/why-you-should-use-python-m-pip/)?
 
